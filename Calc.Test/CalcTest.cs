@@ -14,6 +14,7 @@ namespace Calc.Test
         [TestCase(10, "5", "5")]
         [TestCase(100, "50", "50")]
         [TestCase(100, "75", "25")]
+        [TestCase(0,"1","-1")]
 
         [Test]
         public void shouldadd(int ans, string i1, string i2)
@@ -27,16 +28,5 @@ namespace Calc.Test
             Icalc c = new NUnit.Calc();
             Assert.That(() => c.add("a", "b"), Throws.ArgumentException);
         }
-        [Test]
-        public void thrws()
-        {
-            Icalc c = new NUnit.Calc();
-            Assert.That(() => c.add("a", "b"), Throws.ArgumentNullException);
-        }
-
-
-
-
-
     }
 }
