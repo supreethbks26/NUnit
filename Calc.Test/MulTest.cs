@@ -13,6 +13,7 @@ namespace Calc.Test
     {
         [TestCase(0,0,0)]
         [TestCase(100,10,10)]
+        [TestCase(-100,100,-1)]
         [Test]
 
         public void shouldmul(int ans, int n1, int n2)
