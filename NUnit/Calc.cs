@@ -10,11 +10,12 @@ namespace NUnit
     {
         public int add(string num1, string num2)
         {
-            //if (int.TryParse(num1, out int n1) && int.TryParse(num2, out int n2))
-            //{
-            return (int.Parse(num1) + int.Parse(num2));
-           // }
-            //else throw new ArgumentException("Invalid Input");
+            int n1, n2;
+            if (int.TryParse(num1, out n1) && int.TryParse(num2, out n2))
+            {
+                return n1 + n2;
+            }
+            throw new ArgumentException("Invalid input");
         }
 
         public int mul(int num1, int num2)
