@@ -10,7 +10,10 @@ namespace NUnit
     {
         static void Main(string[] args)
         {
+            Icalc c = new Calc();
 
+            Console.WriteLine(c.add("10", "5"));
+            Console.ReadLine();
         }
     }
 }
